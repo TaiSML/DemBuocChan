@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"btl_final\startup_stm32f103xb.o"
+"btl_final\main.o"
+"btl_final\stm32f1xx_hal_msp.o"
+"btl_final\stm32f1xx_it.o"
+"btl_final\stm32f1xx_hal_gpio_ex.o"
+"btl_final\stm32f1xx_hal_i2c.o"
+"btl_final\stm32f1xx_hal.o"
+"btl_final\stm32f1xx_hal_rcc.o"
+"btl_final\stm32f1xx_hal_rcc_ex.o"
+"btl_final\stm32f1xx_hal_gpio.o"
+"btl_final\stm32f1xx_hal_dma.o"
+"btl_final\stm32f1xx_hal_cortex.o"
+"btl_final\stm32f1xx_hal_pwr.o"
+"btl_final\stm32f1xx_hal_flash.o"
+"btl_final\stm32f1xx_hal_flash_ex.o"
+"btl_final\stm32f1xx_hal_exti.o"
+"btl_final\stm32f1xx_hal_tim.o"
+"btl_final\stm32f1xx_hal_tim_ex.o"
+"btl_final\system_stm32f1xx.o"
+--strict --scatter "BTL_Final\BTL_Final.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BTL_Final.map" -o BTL_Final\BTL_Final.axf
